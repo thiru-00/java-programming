@@ -1,0 +1,75 @@
+import java.util.*;
+class  bank_account
+{
+public static void main(String[]args)
+{
+System.out.println("1-Deposite to the account");
+System.out.println("2-withdraw from the account");
+int option;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the option to deposite(or)withdraw");
+option=sc.nextInt();
+switch(option)
+{
+case 1:
+{
+Scanner sa=new Scanner(System.in);
+System.out.println("enter the name of depositer=");
+String a=sa.nextLine();
+Scanner sa1=new Scanner(System.in);
+System.out.println("enter the account number=");
+int a1=sa1.nextInt();
+System.out.println("1=current");
+System.out.println("2=savings");
+Scanner sa2=new Scanner(System.in);
+System.out.println("enter the account type(current(or)saving)=");
+int a2=sa2.nextint();
+if(a2=1||2)
+{
+System.out.println("your account balance is =500");
+System.out.println("enter the amount to deposite =");
+Scanner sa3=new Scanner(System.in);
+int a3=sa3.nextInt();
+int a4=a3+500;
+System.out.println("your account balance"+a4);
+}
+else
+{
+System.out.println("enter the correct account type");
+}
+break;
+}
+case 2:
+{
+Scanner se=new Scanner(System.in);
+System.out.println("enter the name of depositer=");
+String b=se.nextLine();
+Scanner se1=new Scanner(System.in);
+System.out.println("enter the account number=");
+int b1=se1.nextInt();
+Scanner se2=new Scanner(System.in);
+System.out.println("enter the account type(current(or)saving)=");
+String b2=se2.nextLine();
+if(b2==current || b2=saving)
+{
+//System.out.println("your account balance is =10000");
+System.out.println("enter the amount to whitdraw =");
+Scanner se3=new Scanner(System.in);
+int b3=se3.nextInt();
+int b4=10000-b3;
+System.out.println("your account balance"+b4);
+}
+else
+{
+System.out.println("enter the correct account type");
+}
+break;
+}
+default:
+{
+System.out.println("no account found");
+
+}
+}
+}
+}
