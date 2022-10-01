@@ -1,0 +1,38 @@
+import java.util.*;
+class leap_year
+{
+public static void main(String[]args)
+{
+int y,d,m;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the day=");
+d=sc.nextInt();
+Scanner se=new Scanner(System.in);
+System.out.println("enter the month=");
+m=se.nextInt();
+Scanner sq=new Scanner(System.in);
+System.out.println("enter the year=");
+if(!sq.hasNextInt())
+{
+ System.out.println("enter the correct year");
+ return;
+}
+y=sq.nextInt();
+if(d<=1 || d>31 || m<=1 || m>12)
+{
+  System.out.println("enter the correct month(or)date");
+  return;
+}
+        if(y%4==0)
+        {
+         System.out.println("given year is a leap_year");
+         return;
+        }
+       else
+       {
+        System.out.println("given year is not a leap_year");
+        return;
+       }
+}
+
+}
