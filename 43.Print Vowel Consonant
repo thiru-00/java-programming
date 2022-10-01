@@ -1,0 +1,65 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+ class PrintVowelConsonant {
+
+   public static void main(String[] args) {
+
+      Scanner scan = null;
+      String str = null;
+      Set<Character> vowels = null;
+      Set<Character> consonants = null; 
+      char ch = '\0';
+      String set;
+   
+      scan = new Scanner(System.in);
+
+
+      System.out.print("Enter String :: ");
+      str = scan.nextLine();
+      str=str.length();
+ 
+      str = str.toUpperCase();
+
+      vowels = new HashSet<Character>();
+      consonants = new HashSet<Character>();
+
+      for(int i=0; i<str.length(); i++) {
+         ch = str.charAt(i);
+
+         
+         if(ch >= 'A' && ch <= 'Z') {
+
+       
+            if( checkVowel(ch) ) {
+               vowels.add(ch);
+            } else {
+               consonants.add(ch);
+            }
+         }
+      }
+      {
+      for (int i=0;i<str.length; i++)
+		{
+			set.add(str[i]);
+		}
+  		System.out.print(set);
+
+      }
+
+      System.out.println("Vowels :: " + vowels);
+      System.out.println("Consonants :: " + consonants);
+
+      scan.close();
+		
+   }
+
+   private static boolean checkVowel(char ch) {
+      if(ch == 'A' || ch == 'E' || ch == 'I'
+            || ch == 'O' || ch == 'U')
+      return true;
+      return false; // else return false;
+   }
+
+}
