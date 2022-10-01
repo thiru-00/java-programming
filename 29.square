@@ -1,0 +1,22 @@
+import java.util.*;
+class square
+{
+public static void main(String[]args)
+{
+Scanner se=new Scanner(System.in);
+System.out.println("enter the lower range=");
+int n1=se.nextInt();
+Scanner so=new Scanner(System.in);
+System.out.println("enter the upper range=");
+int n2=so.nextInt();
+if(n1<=0||n2<=0)
+{
+System.out.println("invalid");
+}
+if(i=0;i>=n1;i++)
+
+{
+int a=n1*n1;
+System.out.println(n1,a);
+continue;
+} 
