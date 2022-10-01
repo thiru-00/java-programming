@@ -1,0 +1,99 @@
+import java.util.*;
+class bank
+{
+public static void main(String[]args)
+{
+System.out.println("1=SBI");
+System.out.println("2=ICIC");
+System.out.println("3=AXIS");
+int option;
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the bank option=");
+option=sc.nextInt();
+switch(option)
+{
+case 1:
+ {
+  System.out.println("SBI BANK");
+ 
+  System.out.println("enter the amount=");
+  Scanner sc1=new Scanner(System.in);
+  float a=sc1.nextFloat();
+  System.out.println("enter the year=");
+  Scanner sc2=new Scanner(System.in);
+  float a1=sc2.nextFloat();
+  System.out.println("enter the interest rate=");
+  Scanner sc3=new Scanner(System.in);
+  float a2=sc3.nextFloat();
+  double a3=8.4;
+  if(a3==a2)
+  {
+  float a4=a*a1*a2/100;
+  System.out.println("interest rate="+a4);
+  }
+  else
+  {
+  System.out.println("enter the correct SBI interest rate");
+  }
+  break;
+ }
+case 2:
+ {
+  System.out.println("ICIC BANK");
+ 
+  System.out.println("enter the amount=");
+  Scanner se=new Scanner(System.in);
+  float b=se.nextFloat();
+  System.out.println("enter the year=");
+  Scanner se2=new Scanner(System.in);
+  float b1=se2.nextFloat();
+  System.out.println("enter the interest rate=");
+  Scanner se3=new Scanner(System.in);
+  float b2=se3.nextFloat();
+  double b3=7.3;
+  if(b3==b2)
+  {
+  float b4=b*b1*b2/100;
+  System.out.println("interest rate="+b4);
+  }
+  else
+  {
+  System.out.println("enter the correct  ICIC interest rate");
+  }
+  break;
+ }
+case 3:
+ {
+  System.out.println("AXIS BANK");
+ 
+  System.out.println("enter the amount=");
+  Scanner sa=new Scanner(System.in);
+  float c=sa.nextFloat();
+  System.out.println("enter the year=");
+  Scanner sa2=new Scanner(System.in);
+  float c1=sa2.nextFloat();
+  System.out.println("enter the interest rate=");
+  Scanner sa3=new Scanner(System.in);
+  float c2=sa3.nextFloat();
+  double c3=9.7;
+  if(c3==c2)
+  {
+  float c4=c*c1*c2/100;
+  System.out.println("interest rate="+c4);
+ 
+  }
+  else
+  {
+  System.out.println("enter the correct  AXIS interest rate");
+  }
+  break;
+ }
+default:
+{
+System.out.println("enter the correct option");
+break;
+  }
+
+} 
+}
+}
