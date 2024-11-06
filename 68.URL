@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the url: ");
+        String url=sc.nextLine();
+        if(validurl(url)){
+            System.out.print("is valid");
+        }
+        else{
+            System.out.print("not valid");
+        }
+    }
+    public static boolean validurl(String url)
+    {
+        return url.startsWith("https://")||url.startsWith("http://");
+    }
+}
